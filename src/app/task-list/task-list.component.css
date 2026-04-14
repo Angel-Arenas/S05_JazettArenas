@@ -1,0 +1,55 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  transform: translateX(5px);
+}
+
+/* tarea completada */
+.completada span {
+  text-decoration: line-through;
+  color: #888;
+  cursor: pointer;
+}
+
+.no-tasks {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+span {
+  cursor: pointer;
+  flex: 1;
+}
+
+.btn-eliminar {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #d32f2f;
+}

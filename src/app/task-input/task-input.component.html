@@ -1,0 +1,5 @@
+<div class="input-container">
+  <input [(ngModel)]="nuevaTarea" placeholder="Escribe una tarea">
+  <button (click)="agregar()">Agregar</button>
+  <p *ngIf="mostrarError" class="error">No se aceptan tareas vacías</p>
+</div>

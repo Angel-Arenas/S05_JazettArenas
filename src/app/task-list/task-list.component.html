@@ -1,0 +1,10 @@
+<div class="task-list">
+    <p *ngIf="tareas.length === 0" class="no-tasks">No hay tareas registradas</p>
+    
+    <ul *ngIf="tareas.length > 0">
+        <li *ngFor="let tarea of tareas" [class.completada]="tarea.completada">
+            <span (click)="marcarCompletada(tarea.id)">{{tarea.nombre}}</span>
+            <button class="btn-eliminar" (click)="eliminarTarea(tarea.id)">Eliminar</button>
+        </li>
+    </ul>
+</div>
